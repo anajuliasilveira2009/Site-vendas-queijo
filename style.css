@@ -1,0 +1,96 @@
+/* Importação de fonte básica do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+/* Reset básico e tipografia */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8; /* Cor de fundo suave */
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #5d4037; /* Marrom escuro (cor de queijos curados) */
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+main {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+    display: flex; /* Para alinhar os cards lado a lado */
+    flex-wrap: wrap; /* Permite quebrar linha em telas menores */
+    gap: 30px;
+    justify-content: center;
+}
+
+/* Estilo do Card do Produto */
+.produto-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    width: 300px; /* Largura fixa para o card */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.produto-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.preco {
+    font-size: 1.5em;
+    color: #c08433; /* Cor de queijo */
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+/* Estilo do Botão de Compra */
+.botao-comprar {
+    display: inline-block;
+    background-color: #8bc34a; /* Verde (para destacar a compra) */
+    color: white;
+    text-decoration: none; /* Remove o sublinhado do link */
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.botao-comprar:hover {
+    background-color: #689f38; /* Escurece um pouco no hover */
+}
+
+/* Estilo do Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+/* Estilo para a seção de promoção */
+.promocao {
+    width: 100%;
+    text-align: center;
+    background-color: #fff9c4;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px dashed #ffd54f;
+    margin-top: 20px;
+}
