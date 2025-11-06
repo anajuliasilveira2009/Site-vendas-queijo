@@ -1,35 +1,42 @@
-/* Importação de fonte básica do Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+/* Importação de fonte elegante */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
 
-/* Reset básico e tipografia */
+/* Reset e Configurações Gerais */
 body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f8f8; /* Cor de fundo suave */
-    color: #333;
+    background-color: #f5f0e1; /* Cor creme suave (base do queijo) */
+    color: #4b3d30;
     line-height: 1.6;
 }
 
 header {
-    background-color: #5d4037; /* Marrom escuro (cor de queijos curados) */
+    background-color: #6d4c41; /* Marrom escuro (casca) */
     color: white;
-    padding: 40px 20px;
+    padding: 60px 20px;
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Merriweather', serif;
 }
 
 header h1 {
+    font-size: 3em;
     margin: 0;
-    font-size: 2.5em;
+}
+
+h2 {
+    text-align: center;
+    color: #a1887f;
+    font-family: 'Merriweather', serif;
+    margin-bottom: 40px;
 }
 
 main {
     max-width: 1200px;
     margin: 30px auto;
     padding: 0 20px;
-    display: flex; /* Para alinhar os cards lado a lado */
-    flex-wrap: wrap; /* Permite quebrar linha em telas menores */
+    display: flex; 
+    flex-wrap: wrap; 
     gap: 30px;
     justify-content: center;
 }
@@ -37,60 +44,61 @@ main {
 /* Estilo do Card do Produto */
 .produto-card {
     background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
     padding: 20px;
     text-align: center;
-    width: 300px; /* Largura fixa para o card */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    width: 300px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.produto-card:hover {
+    transform: translateY(-5px); /* Efeito ao passar o mouse */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .produto-card img {
     width: 100%;
     height: auto;
-    border-radius: 4px;
+    border-radius: 8px;
     margin-bottom: 15px;
 }
 
 .preco {
-    font-size: 1.5em;
-    color: #c08433; /* Cor de queijo */
+    font-size: 1.8em;
+    color: #c08433; /* Dourado/Queijo */
     font-weight: 700;
     margin: 10px 0;
 }
 
+.descricao, .origem, .peso {
+    color: #6e6e6e;
+    font-size: 0.9em;
+}
+
 /* Estilo do Botão de Compra */
 .botao-comprar {
-    display: inline-block;
-    background-color: #8bc34a; /* Verde (para destacar a compra) */
+    display: block; /* Ocupa a largura total do card */
+    background-color: #8bc34a; /* Verde atraente */
     color: white;
-    text-decoration: none; /* Remove o sublinhado do link */
-    padding: 12px 25px;
+    text-decoration: none; 
+    padding: 15px;
+    margin-top: 20px;
     border-radius: 5px;
     font-weight: bold;
+    letter-spacing: 1px;
     transition: background-color 0.3s ease;
 }
 
 .botao-comprar:hover {
-    background-color: #689f38; /* Escurece um pouco no hover */
+    background-color: #689f38; 
 }
 
-/* Estilo do Rodapé */
 footer {
     background-color: #333;
-    color: white;
+    color: #ddd;
     text-align: center;
-    padding: 20px;
-    margin-top: 50px;
-}
-
-/* Estilo para a seção de promoção */
-.promocao {
-    width: 100%;
-    text-align: center;
-    background-color: #fff9c4;
     padding: 30px;
-    border-radius: 8px;
-    border: 1px dashed #ffd54f;
-    margin-top: 20px;
+    margin-top: 50px;
 }

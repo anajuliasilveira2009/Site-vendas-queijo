@@ -1,21 +1,17 @@
-// Exemplo de código JavaScript simples
-// Este código pode ser usado para exibir uma mensagem no console
-// ou para adicionar alguma interatividade no futuro.
+// Este script pode ser usado para adicionar interatividade que não precisa de servidor.
 
 document.addEventListener('DOMContentLoaded', (event) => {
-    console.log('O site da Queijaria Artesanal foi totalmente carregado!');
+    console.log('Queijaria Artesanal: Site carregado com sucesso!');
 
-    // Exemplo: Adicionar um efeito visual quando o mouse passa sobre o preço
-    const precos = document.querySelectorAll('.preco');
-    precos.forEach(preco => {
-        preco.addEventListener('mouseover', () => {
-            // Apenas para demonstração
-            console.log('O cliente está de olho no preço!');
-        });
+    // Exemplo de interatividade: Alerta ao clicar no rodapé
+    const footer = document.querySelector('footer');
+    footer.addEventListener('click', () => {
+        // alert('Obrigado por visitar nossa Queijaria! Faça seu pedido agora.');
+        // O alerta está comentado. Se quiser ativá-lo, remova as duas barras (//).
     });
-});
 
-// Futuramente, você pode usar este arquivo para:
-// - Validação de formulários (contato)
-// - Efeitos de animação (sliders de imagens)
-// - Adicionar lógica para um carrinho de compras se usar Snipcart ou similar.
+    // Você pode usar este arquivo futuramente para:
+    // 1. Validar formulários de contato (se houver).
+    // 2. Animar elementos da página.
+    // 3. Adicionar um botão "Voltar ao topo".
+});
